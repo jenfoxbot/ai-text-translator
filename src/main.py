@@ -107,7 +107,7 @@ if __name__ == "__main__":
     # Pull in Cog Services language codes
     print("First, let's get our Cognitive Services language code. \n")
 
-    langcode_file_path = "./CogServ_LanguageCodeDict.json"
+    langcode_file_path = "./CogServices-LanguageCodeDictionary.json"
     input_language_code = []
     
     # Loop until you get a match
@@ -128,6 +128,7 @@ if __name__ == "__main__":
     print("detected language: ", detected_language[0]['detectedLanguage']['language'])
     print("detected language score: ", detected_language[0]['detectedLanguage']['score'])
     print("translated into: ", detected_language[0]['translations'][0]['to'])
+    # NOTE: comment out the following line if you don't want to see the translated text
     print("translated text: ", detected_language[0]['translations'][0]['text'])
     
     # save the translated text to a file
