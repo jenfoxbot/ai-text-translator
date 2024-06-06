@@ -84,24 +84,6 @@ def detect_language(key, endpoint, text, target_language_code):
     #return response[0]['detectedLanguage']['language']
     return response
 
-def translate_text(key, endpoint, text, target_language):
-    """This function translates a text string into a target language."""
-    constructed_url = endpoint + '/translate'
-    params = {
-        'api-version': '3.0',
-        'to': [target_language]
-    }
-    headers = {
-        'Ocp-Apim-Subscription-Key': key,
-        'Content-type': 'application/json',
-        'X-ClientTraceId': str(uuid.uuid4())
-    }
-    body = [{
-        'text': text
-    }]
-    request = requests.post(constructed_url, params=params, headers=headers, json=body)
-    response = request.json()
-    return response[0]['translations'][0]['text']
 
 if __name__ == "__main__":   
     # Pull in Cog Services language codes
