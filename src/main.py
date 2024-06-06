@@ -62,7 +62,7 @@ def write_to_file(text, file_path):
         f.write(text)
 
 # STEP 3: Run Cog Services on the text file to translate it
-def detect_language(key, endpoint, text, target_language_code):
+def translate_text(key, endpoint, text, target_language_code):
     """This function detects the language of a text string."""
     constructed_url = endpoint + '/translate'
     params = {
