@@ -106,7 +106,7 @@ if __name__ == "__main__":
     trans_lang = input("Enter target language code: ")    
     
     # Detect the language of the text
-    detected_language = detect_language(key, endpoint, text_to_translate, trans_lang)
+    detected_language = translate_text(key, endpoint, text_to_translate, trans_lang)
     print("detected language: ", detected_language[0]['detectedLanguage']['language'])
     print("detected language score: ", detected_language[0]['detectedLanguage']['score'])
     print("translated into: ", detected_language[0]['translations'][0]['to'])
