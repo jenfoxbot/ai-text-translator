@@ -7,8 +7,8 @@ This project makes text translation easier, faster, and more accessible! It uses
 
 **More details:**
 
-The program prompts the user (you!) for a desired target language. It outputs a list of supported languages that match your target language(s) along with its corresponding language code. Use the language code for the next input, which will translate the text file of your choosing!
-The program prints and saves the translated file with an updated file name! Yay!
+The program prompts the user (you!) for desired target languages. It outputs a list of supported languages that match your target language(s) along with their corresponding language codes. Use the language codes for the next input, which will translate the text file of your choosing!
+The program prints and saves the translated files with updated file names! Yay!
 
 **Read time:** 5 min
 
@@ -53,9 +53,9 @@ When that's finished, run the program with the following command:
 
 `python main.py`
 
-This will take you through a prompt process where you specify your target language, grab the language code (e.g. for English you'd use 'en' or for Spanish you'd use 'es'), and then input that into the target language for translation.
+This will take you through a prompt process where you specify your target languages, grab the language codes (e.g. for English you'd use 'en' or for Spanish you'd use 'es'), and then input those into the target languages for translation.
 
-If the program runs successfully, you'll see the translated text print to your screen (you can disable this by commenting out line 132). You'll also have a new file with the same name + the translation language (e.g. "pomplemousse.txt_translated_to_af.txt" -- okay yes it's a lil' messy but it does the job :P).
+If the program runs successfully, you'll see the translated texts print to your screen (you can disable this by commenting out line 132). You'll also have new files with the same name + the translation languages (e.g. "pomplemousse.txt_translated_to_af.txt" -- okay yes it's a lil' messy but it does the job :P).
 
 That's it! Go forth and translate all the things!! And of course, modify the program however you see fit.
 
